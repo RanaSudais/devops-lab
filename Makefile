@@ -34,3 +34,5 @@ clean:
 
 ci: clean check test
 
+git switch -c feature/word-count
+	wc -w $(OUTPUTS) | tail -1
